@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+<!-- For title -->
+{% block title %}
+    register for few user
+{% endblock %}
+<!-- For style -->
+{% block stylesheet %}
+{% endblock %}
+
+<!-- for profile -->
+{% block profile %}
+{% endblock %}
+
+<!-- for Contan -->
+{% block content %}
+
+    <form action="" method="POST">
+           {% csrf_token %}
+           {{ form.as_p }} 
+            <button class="btn btn-primary">Register</button>
+
+    </form>
+
+{% endblock %}
+
+<!-- for javascript -->
+{% block script %}
+{% endblock %}
+
